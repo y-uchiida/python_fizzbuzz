@@ -1,4 +1,7 @@
 print("fizzbuzz start")
 
 for i in range(1, 101):
-    print(i)
+    if i % 3 == 0:
+        print("Fizz")
+    else:
+        print(i)
