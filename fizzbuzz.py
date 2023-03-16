@@ -1,7 +1,5 @@
-print("fizzbuzz start")
+def fizz_buzz(num):
+    return "Fizz" * (num % 3 == 0) + "Buzz" * (num % 5 == 0) or str(num)
 
-for i in range(1, 101):
-    if i % 3 == 0:
-        print("Fizz")
-    else:
-        print(i)
+
+print("\n".join(fizz_buzz(num) for num in range(1, 101)))
